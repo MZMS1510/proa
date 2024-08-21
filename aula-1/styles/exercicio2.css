@@ -1,0 +1,53 @@
+div {
+    text-align: center;
+}
+
+#quadro1 {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 160px;
+    height: 100px;
+    background-color: blue;
+    z-index: 1;
+}
+
+#quadro2 {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 640px;
+    height: 600px;
+    background-color: red;
+    z-index: 0;
+}
+
+#quadro3 {
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    width: 640px;
+    height: 40px;
+    background-color: greenyellow;
+    z-index: 2;
+}
+
+#quadro4{
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    width: 620px;
+    height: 380px;
+    background-color: yellow;
+    z-index: 3;
+}
+
+#quadro5 {
+    position: absolute;
+    top: 550px;
+    left: 100px;
+    width: 640px;
+    height: 60px;
+    background-color: gray;
+    z-index: 4;
+}

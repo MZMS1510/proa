@@ -1,0 +1,75 @@
+body {
+    font-size: 20px;
+    /* comentário no css*/
+    color: rgb(229, 232, 238);
+    text-align: center;
+    /* imagem de fundo */
+    background-color: rgb(40, 60, 66);
+    background-image: url("../images/carro-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 5em;
+    background-image: url("../images/mcqueen.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2 {
+    font-size: 3em;
+    color: olive;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    background-color: dimgrey;
+    width: 600px;
+    font-family: tahoma;
+    /* mudança de fonte*/
+    font-weight: normal;
+    /* negrito */
+    text-decoration: underline;
+    /* sublinhado */
+}
+
+.diferente {
+    background-color: brown;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    text-align: center;
+    text-decoration: underline blue;
+    background-color: yellow;
+    width: 500px;
+    margin: 0;
+}
+
+h4 {
+    background-color: magenta;
+    margin-left: 400px;
+    border: 3px solid red;
+    padding: 10px
+}
+
+h5 {
+    margin-left: 300px;
+}
+
+h6 {
+    margin: auto;
+}
