@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form name="form" id="form">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="nome">Entre com seu nome</label>
+            <input type="text" name="nome" maxlength="50" size="50" required placeholder="Digite seu nome aqui...">
+            <br><br>
+            <label for="email">Entre com seu email</label>
+            <input type="email" name="email" maxlength="50" size="50" placeholder="Digite seu email aqui...">
+            <br><br>
+            <label for="senha">Insira uma senha</label>
+            <input type="password" name="senha" maxlength="8" placeholder="12345678">
+            <br><br>
+            <label>Você utiliza nossos serviços?</label> <br>
+            <label>sim</label>
+            Sim <input type="radio" name="utiliza" value="sim">
+            Não <input type="radio" name="utiliza" value="nao">
+            Talvez <input type="radio" name="utiliza" value="talvez">
+            <br><br>
+            <label>Qual navegador você costuma usar</label><br>
+            Fire<input type="checkbox" name="" id=""><br>
+            Edge<input type="checkbox" name="" id=""><br>
+            Chrome<input type="checkbox" name="" id=""><br>
+            Safari<input type="checkbox" name="" id=""><br>
+            <br><br>
+            <label>selecione um</label>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <br><br>
+            <input type="number" name="" id="" max="200">
+            <br><br>
+            <input type="date">
+            <br><br>
+            <input type="search" url="#">
+            <br><br>
+            <input type="color">
+            <br><br>
+            <progress value="80" max="100"></progress>
+            <br><br>
+            <meter min="0" max="100" low="40" high="90" optimum="100" value="50"></meter>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
