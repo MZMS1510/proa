@@ -1,0 +1,181 @@
+/* Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C5DBF2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navegacao {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 5px;
+}
+
+#navegacao>a {
+    text-decoration: none;
+    color: black;
+}
+
+#navegacao>a:hover {
+    text-decoration: underline;
+}
+
+#login-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 50px;
+}
+
+#login-menu img {
+    margin-top: 10px;
+}
+
+#login,
+#register,
+#learn-more {
+    padding: 15px;
+}
+
+#login {
+    color: #007B83;
+    border: 1px solid;
+    transition: .25s all ease-in-out;
+}
+
+#login:hover {
+    color: white;
+    background-color: #007B83;
+    border: none;
+}
+
+.green-button,
+#checkout {
+    background-color: #007B83;
+    color: white;
+}
+
+.green-button {
+    transition: .25s all ease-in-out;
+}
+
+.green-button:hover {
+    background-color: transparent;
+    color: #007B83;
+    border: 1px solid;
+}
+
+/* Fim do cabeçalho */
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 240px;
+}
+
+#conteudo-principal {
+    width: 40%;
+    margin-right: 2%;
+}
+
+#conteudo-principal>h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4em;
+    margin-bottom: 25px;
+}
+
+#conteudo-principal>p {
+    font-size: 1.8em;
+}
+
+#learn-more {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    width: 150px;
+}
+
+/* Lojas */
+
+#lojas {
+    position: relative;
+    width: 35%;
+}
+
+#loja1 {
+    position: absolute;
+    width: 90%;
+    padding: 10px;
+    background-color: #F6D5C4;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#menu-loja1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#loja1>h2 {
+    text-align: center;
+    color: #E27964;
+    margin-bottom: 10px;
+}
+
+#loja1>img {
+    margin: 20px;
+}
+
+#loja2 {
+    position: absolute;
+    right: 0px;
+    bottom: 20%;
+    width: 52%;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 10px 5px 0px;
+}
+
+#loja2>h3 {
+    background-color: #EEE;
+    border-bottom: 2px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+#loja2>img {
+    margin: 15px;
+}
+
+#checkout {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    padding-top: 5px;
+    height: 30px;
+    border-radius: 10px;
+}
