@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
+    <link rel="shortcut icon" href="images/youtube.png" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
@@ -13,18 +14,18 @@
 <body>
     <header>
         <section>
-            <span class="material-symbols-outlined">menu</span>
+            <span class="material-symbols-outlined menu">menu</span>
             <a href="#"><img src="images/logo.png" alt="logo"></a>
         </section>
         <section>
-            <input type="search" size="60" placeholder="Pesquisar">
-            <button class="search-button material-symbols-outlined">search</button>
-            <button class="material-symbols-outlined">mic</button>
+            <input type="search" size="70" placeholder="Pesquisar">
+            <button class="search-button material-symbols-outlined" title="Pesquisar">search</button>
+            <button class="material-symbols-outlined mic-button" title="Pesquisar com sua voz">mic</button>
         </section>
         <section class="right-buttons">
-            <span class="material-symbols-outlined">add</span>
-            <span class="material-symbols-outlined">notifications</span>
-            <span class="material-symbols-outlined">person</span>
+            <span class="material-symbols-outlined" title="Criar">add</span>
+            <span class="material-symbols-outlined" title="Notificações">notifications</span>
+            <img class="profile-picture" src="images/youtube-redondo.png" alt="profile-picture">
         </section>
     </header>
 
@@ -43,7 +44,7 @@
         <a href="#">Playlists</a>
         <a href="#">Seus vídeos</a>
         <a href="#">Assistir mais tarde</a>
-        <a href="#">Vídeos marcados com "Gostei"</a>
+        <a href="#">Vídeos com "Gostei"</a>
 
         <hr>
 
@@ -84,7 +85,7 @@
     </nav>
 
     <section class="categories">
-        <a href="#" class="category">Tudo</a>
+        <a href="#" class="category active-category">Tudo</a>
         <a href="#" class="category">Jogos</a>
         <a href="#" class="category">Programação</a>
         <a href="#" class="category">Pokémon</a>
@@ -92,37 +93,85 @@
         <a href="#" class="category">Anime</a>
         <a href="#" class="category">Livros</a>
         <a href="#" class="category">Vestibular</a>
+        <a href="#" class="category">Skyrim</a>
+        <a href="#" class="category">Java</a>
+        <a href="#" class="category">C#</a>
+        <a href="#" class="category">Mixes</a>
+        <a href="#" class="category">Musica</a>
+        <a href="#" class="category">Attack on Titan</a>
     </section>
 
     <main>
         <div class="video">
-            <img src="#" alt="thumbnail" class="thumbnail">
+            <img src="images/thumb1.jpg" alt="thumbnail" class="thumbnail">
             <span class="video-timing">15:00</span>
-            <span class="more-options">menu2</span>
-            <img src="#" alt="channel-profile" class="channel-profile">
-            <p class="video-title">Titulo do vídeo</p>
-            <p class="channel-name">Nome</p>
-            <p class="video-details">0 mil visualizações • há 100 dias</p>
+            <span class="more-options material-symbols-outlined">more_vert</span>
+            <img src="images/youtube-redondo.png" alt="channel-profile" class="channel-profile">
+            <div class="video-informations">
+                <p class="video-title">Titulo do vídeo</p>
+                <p class="channel-name">Nome</p>
+                <p class="video-details">0 mil visualizações • há 100 dias</p>
+            </div>
         </div>
 
         <div class="video">
-            <img src="#" alt="thumbnail" class="thumbnail">
+            <img src="images/thumb2.jpg" alt="thumbnail" class="thumbnail">
             <span class="video-timing">15:00</span>
-            <span class="more-options">menu2</span>
-            <img src="#" alt="channel-profile" class="channel-profile">
-            <p class="video-title">Titulo do vídeo</p>
-            <p class="channel-name">Nome</p>
-            <p class="video-details">0 mil visualizações • há 100 dias</p>
+            <span class="more-options material-symbols-outlined">more_vert</span>
+            <img src="images/youtube-redondo.png" alt="channel-profile" class="channel-profile">
+            <div class="video-informations">
+                <p class="video-title">Titulo do vídeo</p>
+                <p class="channel-name">Nome</p>
+                <p class="video-details">0 mil visualizações • há 100 dias</p>
+            </div>
         </div>
 
         <div class="video">
-            <img src="#" alt="thumbnail" class="thumbnail">
+            <img src="images/thumb3.jpg" alt="thumbnail" class="thumbnail">
             <span class="video-timing">15:00</span>
-            <span class="more-options">menu2</span>
-            <img src="#" alt="channel-profile" class="channel-profile">
-            <p class="video-title">Titulo do vídeo</p>
-            <p class="channel-name">Nome</p>
-            <p class="video-details">0 mil visualizações • há 100 dias</p>
+            <span class="more-options material-symbols-outlined">more_vert</span>
+            <img src="images/youtube-redondo.png" alt="channel-profile" class="channel-profile">
+            <div class="video-informations">
+                <p class="video-title">Titulo do vídeo</p>
+                <p class="channel-name">Nome</p>
+                <p class="video-details">0 mil visualizações • há 100 dias</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="images/thumb1.jpg" alt="thumbnail" class="thumbnail">
+            <span class="video-timing">15:00</span>
+            <span class="more-options material-symbols-outlined">more_vert</span>
+            <img src="images/youtube-redondo.png" alt="channel-profile" class="channel-profile">
+            <div class="video-informations">
+                <p class="video-title">Titulo do vídeo</p>
+                <p class="channel-name">Nome</p>
+                <p class="video-details">0 mil visualizações • há 100 dias</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="images/thumb2.jpg" alt="thumbnail" class="thumbnail">
+            <span class="video-timing">15:00</span>
+            <span class="more-options material-symbols-outlined">more_vert</span>
+            <img src="images/youtube-redondo.png" alt="channel-profile" class="channel-profile">
+            <div class="video-informations">
+                <p class="video-title">Titulo do vídeo</p>
+                <p class="channel-name">Nome</p>
+                <p class="video-details">0 mil visualizações • há 100 dias</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="images/thumb3.jpg" alt="thumbnail" class="thumbnail">
+            <span class="video-timing">15:00</span>
+            <span class="more-options material-symbols-outlined">more_vert</span>
+            <img src="images/youtube-redondo.png" alt="channel-profile" class="channel-profile">
+            <div class="video-informations">
+                <p class="video-title">Titulo do vídeo</p>
+                <p class="channel-name">Nome</p>
+                <p class="video-details">0 mil visualizações • há 100 dias</p>
+            </div>
         </div>
     </main>
 </body>
