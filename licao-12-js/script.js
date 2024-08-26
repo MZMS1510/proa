@@ -22,5 +22,3 @@ function someTudo() {
     document.getElementById("camada2").style.visibility = "hidden";
     document.getElementById("camada3").style.visibility = "hidden";
 }
-
-document.getElementById("camada1").style.transition = "2s all ease";
