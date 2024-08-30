@@ -19,6 +19,14 @@
         document.write("A média foi: " + media);
         document.write("A média foi: " + Math.round(media));
         document.write("A média foi: " + media.toFixed(2));
+
+        if(media >= 6) {
+            document.write("APROVADO!")
+        } else if (media >= 5) {
+            document.write("RECUPERAÇÃO!")
+        } else {
+            document.write("REPROVADO!")
+        }
     </script>
 </body>
 </html>
