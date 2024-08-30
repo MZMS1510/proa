@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de média</title>
+</head>
+<body>
+    <h1>Calculando a média das notas</h1>
+
+    <script>
+        let nota1 = parseFloat(prompt("Insira a nota 1"));
+        let nota2 = parseFloat(prompt("Insira a nota 2"));
+        let nota3 = parseFloat(prompt("Insira a nota 3"));
+        let nota4 = parseFloat(prompt("Insira a nota 4"));
+
+        let media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        document.write("A média foi: " + media);
+        document.write("A média foi: " + Math.round(media));
+        document.write("A média foi: " + media.toFixed(2));
+    </script>
+</body>
+</html>
