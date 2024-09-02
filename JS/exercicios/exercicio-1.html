@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela calórica</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Prato</th>
+            <th>Calorias</th>
+
+            <th>Sobremesa</th>
+            <th>Calorias</th>
+
+            <th>Bebida</th>
+            <th>Calorias</th>
+        </tr>
+        <tr>
+            <td>Vegetariano</td>
+            <td>180 cal</td>
+
+            <td>Abacaxi</td>
+            <td>75 cal</td>
+
+            <td>Cha</td>
+            <td>20 cal</td>
+        </tr>
+        <tr>
+            <td>Peixe</td>
+            <td>230 cal</td>
+
+            <td>Sorvete <em>diet</em></td>
+            <td>110 cal</td>
+
+            <td>Suco de Laranja</td>
+            <td>70 cal</td>
+        </tr>
+        <tr>
+            <td>Frango</td>
+            <td>250 cal</td>
+
+            <td>Mousse <em>diet</em></td>
+            <td>170 cal</td>
+
+            <td>Suco de melão</td>
+            <td>100 cal</td>
+        </tr>
+        <tr>
+            <td>Carne</td>
+            <td>350 cal</td>
+
+            <td>Mousse chocolate</td>
+            <td>200 cal</td>
+
+            <td>Refrigerante <em>diet</em></td>
+            <td>65 cal</td>
+        </tr>
+    </table>
+    <button onclick="pedir()">pedir</button>
+    <script>
+        function pedir() {
+            const prato = parseInt(prompt("Selecione um prato (1 - 4)"));
+            const sobremesa = parseInt(prompt("Selecione uma sobremesa (1 - 4)"));
+            const bebida = parseInt(prompt("Selecione uma bebida (1 - 4)"));
+
+            let totalCalorico = 0;
+
+            switch (prato) {
+                case 1:
+                    totalCalorico += 180;
+                    break;
+                case 2:
+                    totalCalorico += 230;
+                    break;
+                case 3:
+                    totalCalorico += 250;
+                    break;
+                case 4:
+                    totalCalorico += 350;
+                    break;
+                default:
+                    break;
+            }
+
+            switch (sobremesa) {
+                case 1:
+                    totalCalorico += 75;
+                    break;
+                case 2:
+                    totalCalorico += 110;
+                    break;
+                case 3:
+                    totalCalorico += 170;
+                    break;
+                case 4:
+                    totalCalorico += 200;
+                    break;
+                default:
+                    break;
+            }
+
+            switch (bebida) {
+                case 1:
+                    totalCalorico += 20;
+                    break;
+                case 2:
+                    totalCalorico += 70;
+                    break;
+                case 3:
+                    totalCalorico += 100;
+                    break;
+                case 4:
+                    totalCalorico += 65;
+                    break;
+                default:
+                    break;
+            }
+
+            alert(`Total calórico: ${totalCalorico}`)
+        }
+    </script>
+</body>
+
+</html>
