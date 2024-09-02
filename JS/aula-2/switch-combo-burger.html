@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da semana</title>
+</head>
+
+<body>
+    <script>
+        const diaDaSemana = parseInt(prompt("Seleciono o combo (1 - 5):"));
+
+        switch (diaDaSemana) {
+            case 1:
+                document.write("Chicken McNuggets 🍔<br>");
+                document.write("McFritas Pequena 🍟<br>");
+                document.write("Bebida 300ml 🥤<br>");
+                break;
+            case 2:
+                document.write("Big Mac 🍔<br>");
+                document.write("McFritas Média 🍟<br>");
+                document.write("Bebida 500ml<br>");
+                break;
+            case 3:
+                document.write("2 Cheeseburger 🍔🍔<br>");
+                document.write("McFritas Média 🍟<br>");
+                document.write("Bebida 500ml 🥤<br>");
+                break;
+            case 4:
+                document.write("2 Chicken Jr. 🍔🍔<br>");
+                document.write("Refrigerante 500ml 🥤<br>");
+                break;
+            case 5:
+                document.write("Big Tasty 🍔<br>");
+                document.write("Bebida 500ml 🥤<br>");
+                break;
+            default:
+                alert("Valor inválido")
+                break;
+        }
+    </script>
+</body>
+
+</html>
