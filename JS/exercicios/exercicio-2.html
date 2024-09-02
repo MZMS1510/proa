@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale um número</title>
+</head>
+
+<body>
+    <script>
+        const num = parseInt(prompt("Digite um número"));
+
+        if (num % 10 == 0) {
+            document.writeln("Divisível por 10<br>");
+        } else {
+            document.writeln("Não divisível por 10<br>");
+        }
+
+        if (num % 5 == 0) {
+            document.writeln("Divisível por 5<br>");
+        } else {
+            document.writeln("Não divisível por 5<br>");
+        }
+
+        if (num % 2 == 0) {
+            document.writeln("Divisível por 2<br>");
+        } else {
+            document.writeln("Não divisível por 2<br>");
+        }
+    </script>
+</body>
+
+</html>
