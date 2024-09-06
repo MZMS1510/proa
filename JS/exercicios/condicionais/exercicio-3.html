@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de juros</title>
+    <title>Tabela de saldo</title>
 </head>
 
 <body>
-    <table>
+    <table border="1">
         <tr>
             <th>Saldo médio</th>
             <th>Percentual</th>
@@ -30,6 +30,21 @@
             <td>50%</td>
         </tr>
     </table>
+    <br>
+    <script>
+        let saldo = parseFloat(prompt("De quanto é o seu saldo médio?"));
+        let credito = 0;
+        if (saldo <= 500) {
+            credito = 0;
+        } else if (saldo <= 1000) {
+            credito = (saldo / 100) * 30
+        } else if (saldo <= 3000) {
+            credito = (saldo / 100) * 40
+        } else if (saldo > 3000) {
+            credito = (saldo / 100) * 50
+        }
+        document.write("Seu crédito é de: R$" + credito);
+    </script>
 </body>
 
 </html>
