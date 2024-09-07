@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <script>
+        let num = parseInt(prompt("Digite um número pelo amor de Deus: "));
+
+        while (num <= 0) {
+            num = parseInt(prompt("Digite um número pelo amor de Deus: "));
+        }
+
+        let a = 0;
+        let b = 1;
+
+        while (a <= num) {
+            document.write(a + "<br>");
+            let c = a + b;
+            a = b;
+            b = c;
+        }
+    </script>
+</body>
+
+</html>
