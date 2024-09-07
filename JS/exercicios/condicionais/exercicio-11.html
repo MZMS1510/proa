@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário Váriavel</title>
+</head>
+
+<body>
+    <script>
+        const name = prompt("Qual é o seu nome?");
+        const fixedSalary = parseFloat(prompt("Qual é o seu salário fixo?"));
+        const totalInSales = parseFloat(prompt("Qual é o seu total em vendas?"));
+        const commision = (totalInSales / 100) * 15;
+
+        document.write("Seu nome: " + name);
+        document.write("<br>")
+        document.write("Seu salário fixo: " + fixedSalary);
+        document.write("<br>")
+        document.write("Seu salário total: " + (fixedSalary + commision));
+    </script>
+</body>
+
+</html>

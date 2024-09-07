@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor de IPI</title>
+</head>
+
+<body>
+    <script>
+        const IPI = parseFloat(prompt("IPI"));
+
+        const cod1 = parseInt(prompt("Código 1"));
+        const val1 = parseInt(prompt("Valor 1"));
+        const quant1 = parseInt(prompt("Quantidade 1"));
+
+        const cod2 = parseInt(prompt("Código 2"));
+        const val2 = parseInt(prompt("Valor 2"));
+        const quant2 = parseInt(prompt("Quantidade 2"));
+
+        const result = ((val1 * quant1) + (val2 * quant2) * (IPI / 100 + 1))
+
+        document.write("Valor a ser pago" + result)
+    </script>
+</body>
+
+</html>

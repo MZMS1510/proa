@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha 3 valores</title>
+</head>
+
+<body>
+    <h1>Escolha 3 valores</h1>
+    <script>
+        const A = parseInt(prompt("Digite um número: "));
+        const B = parseInt(prompt("Digite outro número: "));
+        const C = parseInt(prompt("Digite mais um número: "));
+
+        let primeiro, segundo, terceiro;
+
+        if (A > B && A > C) {
+            primeiro = A;
+        } else if (A < B && A < C) {
+            terceiro = A;
+        } else {
+            segundo = A;
+        }
+
+        if (B > A && B > C) {
+            primeiro = B;
+        } else if (B < A && B < C) {
+            terceiro = B;
+        } else {
+            segundo = B;
+        }
+
+        if (C > B && C > A) {
+            primeiro = C;
+        } else if (C < B && C < B) {
+            terceiro = C;
+        } else {
+            segundo = C;
+        }
+
+        document.writeln("1º número: " + primeiro);
+        document.write("<br>")
+        document.writeln("2º número: " + segundo);
+        document.write("<br>")
+        document.writeln("3º número: " + terceiro);
+
+        // const lista = [A, B, C];
+        // document.write(lista.sort())
+    </script>
+</body>
+
+</html>
