@@ -9,14 +9,15 @@
 
 <body>
     <script>
-        let n = 0;
+        let n = 1;
         let a = 0;
         let b = 1;
         while (n <= 20) {
-            document.write(a + "<br>");
+            document.write(`${n}- ${a} <br>`);
             let c = a + b;
             a = b;
             b = c;
+            n++;
         }
     </script>
 </body>
