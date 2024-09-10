@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando tema</title>
+</head>
+
+<body style="text-align: center;">
+    <h1 id="titulo">Testando modo normal</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nemo, suscipit omnis, fugit perferendis mollitia
+        dicta tenetur officiis, ipsam vero necessitatibus! Nobis, tempora fuga non illum repudiandae officia pariatur
+        culpa?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatem facere corporis voluptas
+        cupiditate eos, natus deserunt qui nihil suscipit, illum fugiat error assumenda modi, pariatur laudantium
+        quibusdam. Neque, illo!</p>
+
+    <button onclick="escuro()">Modo Escuro</button>
+    <button onclick="daltonico()">Modo Daltônico</button>
+    <button onclick="normal()">Modo Normal</button>
+    <br>
+    <button onclick="baixaVisao()">A+</button>
+    <button onclick="normalVisao()">A</button>
+    <button onclick="altaVisao()">A-</button>
+
+    <hr>
+    <img src="images/sol.jpg" alt="imagem" width="400px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos rem nobis quo consequuntur omnis quod
+        inventore, reiciendis eos laudantium. Alias suscipit rem ullam dolorem quas dicta, quasi possimus cupiditate!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a odit molestiae nemo velit officiis tempore
+        at, enim sint provident architecto ullam, eum quo ab unde earum fugit delectus nihil. Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Debitis laborum velit dicta eveniet molestias maiores. Aliquam, iure sapiente
+        repellendus veritatis sunt expedita amet? Incidunt placeat temporibus esse corporis nisi facere.</p>
+
+    <script>
+        const titulo = document.querySelector("#titulo");
+
+        function escuro() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+            titulo.innerHTML = "Testando modo escuro";
+        }
+
+        function daltonico() {
+            document.body.style.backgroundColor = "fuchsia";
+            document.body.style.color = "green";
+            titulo.innerHTML = "Testando modo daltônico";
+        }
+
+        function normal() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+            titulo.innerHTML = "Testando modo normal";
+        }
+
+        function baixaVisao() {
+            document.body.style.fontSize = "2em";
+        }
+
+        function normalVisao() {
+            document.body.style.fontSize = "1em";
+        }
+
+        function altaVisao() {
+            document.body.style.fontSize = ".5em";
+        }
+    </script>
+</body>
+
+</html>

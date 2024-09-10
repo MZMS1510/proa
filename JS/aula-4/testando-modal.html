@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Modal</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .abrir-modal {
+            margin-top: 200px;
+            padding: 20px;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            transition: all .3s ease-in-out;
+            border: none;
+        }
+
+        .abrir-modal:hover {
+            background-color: yellow;
+            color: green;
+            cursor: pointer;
+        }
+
+        .fundo-modal {
+            left: 0;
+            top: 0;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: none;
+        }
+
+        .modal {
+            padding: 20px;
+            background-color: beige;
+            width: 480px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .modal>span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: bold;
+            border: 1px solid;
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+        }
+
+        .modal>span:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando Modal</h1>
+
+    <button class="abrir-modal" onclick="abrirModal()">ABRIR O MODAL</button>
+
+    <div class="fundo-modal">
+        <div class="modal">
+            <img src="images/publi.jpg" alt="publi">
+            <span onclick="fecharModal()">X</span>
+        </div>
+    </div>
+
+    <script src="testando-modal.js"></script>
+</body>
+
+</html>
