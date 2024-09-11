@@ -1,0 +1,71 @@
+div {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid;
+    text-align: center;
+}
+
+div>img {
+    width: 90%;
+    transition: all 1s ease;
+}
+
+#foto1:hover {
+    transform: rotate(30deg);
+}
+
+#foto2 {
+    transform: rotateX(-30deg);
+}
+
+#foto2:hover {
+    transform: rotateX(30deg);
+}
+
+#foto3 {
+    transform: rotateX(-30deg);
+}
+
+#foto3:hover {
+    transform: rotateX(30deg);
+}
+
+#foto4:hover {
+    transform: translate(100px, 50px);
+}
+
+#foto5:hover {
+    transform: translateX(200px);
+}
+
+#foto6:hover {
+    transform: translate(100px, 50px) rotate(180deg);
+}
+
+#foto7:hover {
+    transform: scale(.75);
+}
+
+#foto8:hover {
+    transform: scale(1.25);
+}
+
+#foto9:hover {
+    transform: translate(50px, 10px) rotate(45deg) scale(1.5);
+}
+
+.muda-fundo {
+    background-image: url(images/sol.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .5s ease;
+}
+
+.muda-fundo:hover {
+    background-image: url(images/lua.jpg);
+}

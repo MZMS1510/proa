@@ -1,5 +1,5 @@
 function abrirModal() {
-    document.querySelector(".fundo-modal").style.display = "block";
+    document.querySelector(".fundo-modal").style.display = "flex";
 }
 
 function fecharModal() {
