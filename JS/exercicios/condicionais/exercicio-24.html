@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+
+<body>
+    <script>
+        /*
+        let result = 0;
+
+        function soma(x) {
+            if (x < 0) {
+                document.write(result);
+                return; // FUNCIONA COMO UM BREAK
+            }
+
+            result += x;
+            soma(parseInt(prompt("Digite um número")));
+        }
+
+        soma(parseInt(prompt("Digite um número")));
+        */
+
+        let num = 0;
+        let soma = 0;
+
+        while (true) {
+            num = parseInt(prompt("Digite um número"));
+
+            if (num < 0) {
+                break; // FUNCIONA COMO UM RETURN
+            } else {
+                soma += num;
+            }
+        }
+
+        document.write("O resultado é: " + soma);
+
+    </script>
+</body>
+
+</html>
