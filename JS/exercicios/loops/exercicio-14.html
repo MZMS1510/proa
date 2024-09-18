@@ -10,13 +10,18 @@
 <body>
     <script>
         document.body.style.fontSize = "55px";
-        const num = prompt();
-        let i = 0;
 
-        while (i < num.length) {
-            document.write(num[i], "<br>");
-            i++;
+        let num = parseInt(prompt());
+        let total = 0;
+
+        total = num;
+
+        while (num > 1) {
+            total *= (num - 1);
+            num--;
         }
+
+        document.write(total);
     </script>
 </body>
 

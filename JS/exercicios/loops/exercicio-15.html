@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitos Separados</title>
+</head>
+
+<body>
+    <script>
+        document.body.style.fontSize = "55px";
+
+        let nome, quantNotas = 0, soma = 0, media = 0;
+
+        while (nome !== "fim") {
+            nome = prompt("Nome: ")
+            nome = nome.toLowerCase();
+
+            if (nome !== "fim") {
+                soma += parseInt(prompt("Nota: "));
+                quantNotas++;
+            }
+        }
+
+        media = soma / quantNotas;
+
+        document.write(media);
+    </script>
+</body>
+
+</html>
