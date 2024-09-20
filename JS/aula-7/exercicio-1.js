@@ -9,7 +9,7 @@ const romances = [
     "A mão e a luva (1874)",
     "Dom Casmurro (1899)",
     "Iaiá Garcia (1878)"
-];
+].sort();
 
 const poesias = [
     "Americanas (1875)",
@@ -17,7 +17,7 @@ const poesias = [
     "Falenas (1870)",
     "Crisálidas (1864)",
     "Poesias Completas (1901)"
-];
+].sort();
 
 const contos = [
     "Várias Histórias (1896)",
@@ -27,7 +27,7 @@ const contos = [
     "Histórias da Meia-Noite (1873)",
     "Relíquias de Casa Velha (1906)",
     "Páginas Recolhidas (1899)"
-];
+].sort();
 
 const tresPrimeiros = [];
 
@@ -43,4 +43,4 @@ for (let i = 0; i < 3; i++) {
     tresPrimeiros.push(contos[i]);
 }
 
-console.log(tresPrimeiros);
+console.log(tresPrimeiros.join("\n"));

@@ -55,5 +55,6 @@ invetarioTorper.splice(index, 1);
 invetarioDrofo.push("ovo de dragão");
 invetarioDrofo.push("coxinha");
 
-console.log(invetarioTorper);
-console.log(invetarioDrofo);
+console.log("Invetário do Torper:\n" + invetarioTorper.join("\n"));
+console.log("\n")
+console.log("Invetário do Drofo:\n" + invetarioDrofo.join("\n"));
