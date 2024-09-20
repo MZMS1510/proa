@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média 4</title>
+</head>
+
+<body>
+    <script>
+        /*
+        let nota1, nota2, nota3, nota4, nota5, nota6;
+
+        nota1 = -1;
+        nota2 = -1;
+        nota3 = -1;
+        nota4 = -1;
+        nota5 = -1;
+        nota6 = -1;
+
+        while (nota1 < 0 || nota1 > 10) {
+            nota1 = parseInt(prompt("Digite a primeira nota (0 - 10)"));
+        }
+
+        while (nota2 < 0 || nota2 > 10) {
+            nota2 = parseInt(prompt("Digite a segunda nota (0 - 10)"));
+        }
+
+        while (nota3 < 0 || nota3 > 10) {
+            nota3 = parseInt(prompt("Digite a terceira nota (0 - 10)"));
+        }
+
+        while (nota4 < 0 || nota4 > 10) {
+            nota4 = parseInt(prompt("Digite a quarta nota (0 - 10)"));
+        }
+
+        while (nota5 < 0 || nota5 > 10) {
+            nota5 = parseInt(prompt("Digite a quinta nota (0 - 10)"));
+        }
+
+        while (nota6 < 0 || nota6 > 10) {
+            nota6 = parseInt(prompt("Digite a sexta nota (0 - 10)"));
+        }
+        */
+
+        const notas = [];
+        let soma = 0;
+
+        for (let i = 0; i < 6; i++) {
+            do {
+                notas[i] = parseInt(prompt(`Digite a nota ${i + 1} (0 - 10)`))
+            } while (notas[i] < 0 || notas[i] > 10);
+
+            soma += notas[i];
+        }
+
+        let media = soma / notas.length;
+
+        document.write(media);
+    </script>
+</body>
+
+</html>

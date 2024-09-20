@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média 2</title>
+</head>
+
+<body>
+    <script>
+        let num1 = parseInt(prompt("Digite um número"));
+        let num2 = 0;
+
+        while (num2 <= 0 || num2 < num1) {
+            num2 = parseInt(prompt("Digite um número maior que o primeiro"));
+        }
+
+        let soma = 0;
+        let quantValores = 0;
+
+        for (let i = num1; i <= num2; i++) {
+            soma += i;
+            quantValores++;
+        }
+
+        let media = soma / quantValores;
+
+        document.write(media)
+    </script>
+</body>
+
+</html>

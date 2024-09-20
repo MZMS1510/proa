@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+<body>
+    <script>
+        let soma = 0;
+        let quantidadeValores = 0
+
+        for (let i = 15; i <= 100; i++) {
+            quantidadeValores++;
+            soma += i;
+        }
+
+        const media = soma / quantidadeValores;
+
+        document.write(`Média: ${media}`);
+    </script>
+</body>
+
+</html>

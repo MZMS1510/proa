@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bomba</title>
+    <title>Mostrar uma sequência de números</title>
 </head>
 
 <body>
     <script>
+        let n = parseInt(prompt("Digite um número"));
 
-        for (let contador = 30; contador >= 0; contador--) {
-            document.write(contador + "<br>");
+        for (let i = 1; i <= n; i++) {
+            document.write(i, "<br>");
         }
-
-        document.write("EXPLOSÃO")
     </script>
 </body>
 

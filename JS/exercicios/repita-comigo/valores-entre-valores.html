@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre 24 e 42</title>
+</head>
+
+<body>
+    <script>
+        const nums = [];
+
+        let numsEntre = 0;
+
+        for (let i = 0; i < 10; i++) {
+            nums[i] = parseInt(prompt("Digite um número"))
+
+            if (nums[i] >= 12 && nums[i] <= 42) {
+                numsEntre++;
+            }
+        }
+
+        document.write("Números entre 24 e 42: ", numsEntre, "<br>");
+        document.write("Números que não estão entre 24 e 42: ", (nums.length - numsEntre));
+    </script>
+</body>
+
+</html>
