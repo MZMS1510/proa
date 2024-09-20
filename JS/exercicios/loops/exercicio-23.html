@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divisores</title>
+    <title>Fibonacci</title>
 </head>
 
 <body>
     <script>
-        const num = parseInt(prompt("Digite um número"));
         let i = 1;
-
+        let a = 0;
+        let b = 1;
         do {
-            if (num % i === 0) {
-                document.write(i + "<br>");
-            }
+            document.write(`${i}- ${a} <br>`);
+            let c = a + b;
+            a = b;
+            b = c;
             i++;
-        } while (i <= num);
-
-
+        } while (i <= 20)
     </script>
 </body>
 

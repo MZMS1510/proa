@@ -9,14 +9,14 @@
 
 <body>
     <script>
-        let n = 0;
-        while (n < 5) {
+        let i = 0;
+        do {
             let nome = prompt("Digite seu nome");
             let idade = parseInt(prompt("Digite sua idade"));
 
             document.write(`${nome}: ${idade}<br>`);
-            n++;
-        }
+            i++;
+        } while (i < 5);
     </script>
 </body>
 

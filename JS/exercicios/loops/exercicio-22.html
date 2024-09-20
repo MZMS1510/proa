@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divisores</title>
+    <title>Número primo</title>
 </head>
 
 <body>
     <script>
         const num = parseInt(prompt("Digite um número"));
+        let quantDivisores = 0;
         let i = 1;
 
         do {
             if (num % i === 0) {
-                document.write(i + "<br>");
+                quantDivisores++;
             }
             i++;
         } while (i <= num);
 
-
+        quantDivisores > 2 ? document.write(`${num} não é primo`) : document.write(`${num} é primo`);
     </script>
 </body>
 
