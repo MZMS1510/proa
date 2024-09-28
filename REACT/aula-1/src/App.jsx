@@ -9,12 +9,14 @@ function App() {
 
   return (
     <>
-      <Limao />
-      <Vermelho />
-      <Ciano />
-      <Laranja />
-      <Amarelo />
-      <Preto />
+      <div className="main">
+        <Limao />
+        <Vermelho />
+        <Ciano />
+        <Laranja />
+        <Amarelo />
+        <Preto />
+      </div>
     </>
   )
 }
