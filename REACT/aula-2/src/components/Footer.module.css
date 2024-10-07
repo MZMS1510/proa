@@ -1,0 +1,27 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.footerText {
+    color: white;
+    font-weight: bold;
+}
+
+.linkList {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    left: -20px;
+    list-style: none;
+}
+
+.linkIcons {
+    width: 50px;
+}
