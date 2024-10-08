@@ -1,24 +1,26 @@
 .mainContent {
-    display: flex;
-    justify-content: space-around;
-    gap: 5%;
-    color: rgb(40, 40, 87);
-    padding: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+  color: rgb(40, 40, 87);
+  padding: 100px 0;
 }
 
 .mainImage {
-    width: 40%;
+  width: 40%;
+  height: min-content;
 }
 
 .mainTextArea {
-    max-width: 40%;
-    text-align: center;
+  max-width: 40%;
+  text-align: center;
 }
 
 .mainTitle {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 
 .mainText {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }

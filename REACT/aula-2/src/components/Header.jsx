@@ -1,5 +1,8 @@
+// Importação de imagens
 import logo from "../assets/images/viagens.jpg";
 import lupa from "../assets/images/lupa.png";
+
+// Importação de estilos
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -27,7 +30,7 @@ const Header = () => {
         </li>
         <li>
           <a href="#" className={styles.link}>
-            Muralhas da China
+            Muralha da China
           </a>
         </li>
         <li>
