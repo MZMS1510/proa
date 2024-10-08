@@ -1,0 +1,18 @@
+.container {
+  margin: 20px;
+  height: 30%;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #222;
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.image {
+  width: 40%;
+}
