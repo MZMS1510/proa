@@ -1,6 +1,7 @@
 // Importação de imagens
 import mala from "../assets/images/mala.jpg";
 
+// Importação de estilos
 import styles from "./Home.module.css";
 
 const Home = () => {

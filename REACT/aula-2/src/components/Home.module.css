@@ -1,6 +1,5 @@
 .mainContent {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     gap: 5%;
     color: rgb(40, 40, 87);
