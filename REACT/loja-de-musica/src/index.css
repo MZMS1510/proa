@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        background-image: url(../public/images/guitarra_fundo_body.jpg);
+        background-position: center;
+    }
+}
+
+@layer components {
+    .input-text {
+        @apply w-full border-2 border-gray-500 p-3 rounded-md;
+    }
+}
