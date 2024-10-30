@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ler 5 números</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 5) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    while (nums.length > 0) {
+      document.write(nums.pop());
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positivos</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 10) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    let postive = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+      nums[i] > 0 ? postive++ : null;
+    }
+
+    document.write(`${postive} números positivos`);
+  </script>
+</body>
+
+</html>

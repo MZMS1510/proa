@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decrescente</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 10) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    let numsBetween10and50 = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+      if (nums[i] >= 10 && nums[i] <= 50) {
+        numsBetween10and50++;
+      }
+    }
+
+    document.write(`${numsBetween10and50} números entre 10 e 50`);
+  </script>
+</body>
+
+</html>

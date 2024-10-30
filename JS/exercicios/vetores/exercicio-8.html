@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Média Aritmética</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 5) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    const evenNumbers = [];
+    const unevenNumbers = [];
+
+    for (let i = 0; i < nums.length; i++) {
+      nums[i] % 2 === 0 ? evenNumbers.push(nums[i]) : unevenNumbers.push(nums[i]);
+    }
+
+    // Positivos
+
+    let mediaPositive = 0;
+
+    for (const evenNumber of evenNumbers) {
+      mediaPositive += evenNumber;
+    }
+
+    mediaPositive /= evenNumbers.length;
+
+    // Negativos
+
+    let mediaNegative = 0;
+
+    for (const unevenNumber of unevenNumbers) {
+      mediaNegative += unevenNumber;
+    }
+
+    mediaNegative /= unevenNumbers.length;
+
+    document.write(`${evenNumbers} números positivos <br> ${unevenNumbers} números negativos <br> Média dos números positivos: ${mediaPositive} <br> Média dos números negativos: ${mediaNegative}`);
+  </script>
+</body>
+
+</html>

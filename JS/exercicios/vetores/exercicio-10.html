@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tem zero</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 10) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    let haveZero = false;
+
+    for (let i = 0; i < nums.length; i++) {
+      if (nums[i] === 0) {
+        haveZero = true;
+        break;
+      };
+    }
+
+    document.write(haveZero ? 'Tem zero' : 'Não tem zero');
+  </script>
+</body>
+
+</html>

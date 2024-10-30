@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do maior pro menor</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 10) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    for (let i = 0; i < nums.length; i++) {
+      let aux = 0;
+
+      for (let j = i + 1; j < nums.length; j++) {
+        if (nums[i] > nums[j]) {
+          aux = nums[i];
+          nums[i] = nums[j];
+          nums[j] = aux;
+        }
+      }
+    }
+
+    document.write(nums);
+  </script>
+</body>
+
+</html>

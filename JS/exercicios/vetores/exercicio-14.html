@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decrescente</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 7) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    let evenNums = [];
+    for (let i = 0; i < nums.length; i++) {
+      if (nums[i] % 2 === 0) {
+        evenNums.push(nums[i]);
+      }
+    }
+
+    document.write(evenNums);
+  </script>
+</body>
+
+</html>

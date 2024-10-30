@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soma positivos negativos</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 10) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    const evenNumbers = [];
+    const unevenNumbers = [];
+
+    for (let i = 0; i < nums.length; i++) {
+      nums[i] % 2 === 0 ? evenNumbers.push(nums[i]) : unevenNumbers.push(nums[i]);
+    }
+
+    // Soma dos pares
+    let sumEvenNumbers = 0;
+    for (let i = 0; i < evenNumbers.length; i++) {
+      sumEvenNumbers += evenNumbers[i];
+    }
+
+    // Soma dos impares
+    let sumUnevenNumbers = 0;
+    for (let i = 0; i < unevenNumbers.length; i++) {
+      sumUnevenNumbers += unevenNumbers[i];
+    }
+
+    document.write(`Soma dos pares: ${sumEvenNumbers}<br>Soma dos ímpares: ${sumUnevenNumbers}`);
+  </script>
+</body>
+
+</html>

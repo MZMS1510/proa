@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Média Aritmética</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 7) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    let soma = 0;
+
+    for (let i = 0; i < 5; i++) {
+      soma += nums[i];
+    }
+
+    document.write(soma / nums.length);
+  </script>
+</body>
+
+</html>

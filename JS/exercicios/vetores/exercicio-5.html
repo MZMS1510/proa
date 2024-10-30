@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Média Aritmética</title>
+</head>
+
+<body>
+  <script>
+    const nums = [];
+    while (nums.length < 5) {
+      nums.push(Number(prompt('Digite um número:')));
+    }
+
+    let bigger = nums[0];
+    let smaller = nums[0];
+
+    for (let i = 0; i < nums.length; i++) {
+
+      if (nums[i] > bigger) {
+        bigger = nums[i];
+      }
+
+      if (nums[i] < smaller) {
+        smaller = nums[i];
+      }
+    }
+
+    document.write(`${bigger} and ${smaller}`);
+  </script>
+</body>
+
+</html>
