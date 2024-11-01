@@ -3,28 +3,31 @@
 */
 
 /* Cria o banco de dados */
-create database consultorio;
+CREATE DATABASE consultorio;
 
 /* Selecionar o banco consultorio */
-use consultorio;
+USE consultorio;
 
 /* Cria uma tabela */
-create table paciente(
-	id_paciente int auto_increment primary key unique,
-	nome varchar(100) not null,
-    data_nascimento date not null,
-    cpf char(15) not null,
-    genero enum('m', 'f', 'o'),
-    endereco varchar(100),
-    email varchar(50),
-    telefone char(13)
+CREATE TABLE paciente(
+	pk_id_paciente INT AUTO_INCREMENT PRIMARY KEY UNIQUE,
+	nome_paciente VARCHAR(100),
+    data_nascimento_paciente DATE,
+    cpf_paciente CHAR(15),
+    genero_paciente ENUM('m', 'f', 'o'),
+    endereco_paciente VARCHAR(100),
+    email_paciente VARCHAR(50),
+    telefone_paciente CHAR(13)
 );
 
-/* descreve a estrutura da tabela */
-describe paciente;
+/* Apaga a tabela paciente */
+DROP TABLE paciente;
 
-/* */
-insert into paciente (nome, data_nascimento, cpf, genero, endereco, email, telefone) values
+/* descreve a estrutura da tabela */
+DESCRIBE paciente;
+
+/* insere dados na tabela */
+INSERT INTO paciente (nome_paciente, data_nascimento_paciente, cpf_paciente, genero_paciente, endereco_paciente, email_paciente, telefone_paciente) values
 ("Felipe", "1987-10-10", "123.456.789-10", "m",  "rua canudo de pito", "outro@email.com", "5511988457622"),
 ("Carlos", "2000-02-10", "123.456.789-10", "m",  "rua nossa", "example@email.com", "5511988457622"),
 ("Ana", "1987-10-10", "123.456.789-10", "m",  "rua caraca", "ajuda@email.com", "5511988457622"),
@@ -37,26 +40,32 @@ insert into paciente (nome, data_nascimento, cpf, genero, endereco, email, telef
 ("Weslley Silva", "2005-05-10", "533.256.789-45", "f",  "rua tito", "acalme_se@email.com", "5511972264266");
 
 /* busca todo o conteúdo da tabela */
-select * from paciente;
+SELECT * FROM paciente;
 
-/* apaga a tabela paciente */
-drop table paciente;
+/* Atualiza os dados de algum item na tabela */
+UPDATE paciente SET convenio_paciente = "Unimed" WHERE pk_id_paciente = 1;
+UPDATE paciente SET valor_convenio = 100.00;
+
+/* Altera as colunas da tabela */
+ALTER TABLE paciente ADD COLUMN convenio_paciente VARCHAR(15);
+
+ALTER TABLE paciente ADD COLUMN valor_convenio DECIMAL(10, 2)
 
 /*
  ---------------------- Dentista --------------------
 */
 
-create table dentista(
-	id_dentista int auto_increment primary key,
-    nome varchar(100),
-    data_nascimento date,
-    cro varchar(7),
-    genero enum('m', 'f', 'o'),
-    endereco varchar(100),
-    telefone char(13)
+CREATE TABLE dentista(
+	pk_id_dentista INT AUTO_INCREMENT PRIMARY KEY UNIQUE,
+    nome_dentista VARCHAR(100),
+    data_nascimento_dentista DATE,
+    cro_dentista VARCHAR(7),
+    genero_dentista ENUM('m', 'f', 'o'),
+    endereco_dentista VARCHAR(100),
+    telefone_dentista CHAR(13)
 );
 
-insert into dentista (nome, data_nascimento, cro, genero, endereco, telefone) values
+INSERT INTO dentista (nome_dentista, data_nascimento_dentista, cro_dentista, genero_dentista, endereco_dentista, telefone_dentista) values
 ("Caio", "1997-10-07", "ab576sd", "m", "Casa 7", "5511999999999"),
 ("Matheus Joaquim", "2009-05-09", "ab178sd", "m", "Casa 794", "5511999999998"),
 ("Wesley Rocha", "2000-01-11", "cd178sd", "f", "Casa 12", "5512999999998"),
@@ -68,22 +77,22 @@ insert into dentista (nome, data_nascimento, cro, genero, endereco, telefone) va
 ("Gustavo Lima", "2009-05-10", "ab179sd", "f", "Casa azul", "5511939999998"),
 ("Josiane Domignos", "2010-05-08", "ab178ds", "m", "Casa dois", "5511991099998");
 
-select * from dentista;
+SELECT * FROM dentista;
 
-drop table dentista;
+DROP TABLE dentista;
 
 /*
  ---------------------- Consulta --------------------
 */
 
-create table consulta(
-	id_consulta int auto_increment primary key,
-    local_consulta varchar(100),
-    data_consulta datetime,
-	descricao text
+CREATE TABLE consulta(
+	id_consulta INT AUTO_INCREMENT PRIMARY KEY UNIQUE,
+    local_consulta VARCHAR(100),
+    data_consulta DATETIME,
+	descricao TEXT
 );
 
-insert into consulta (local_consulta, data_consulta, descricao) values
+INSERT INTO consulta (local_consulta, data_consulta, descricao) values
 ("sala 2", "2024-11-10 12:00:00", "Cirurgia de canal"),
 ("sala 3", "2024-11-11 12:00:00", "Exame de rotina"),
 ("sala 1", "2024-11-12 12:00:00", "Checkup"),
@@ -95,9 +104,9 @@ insert into consulta (local_consulta, data_consulta, descricao) values
 ("sala 1", "2024-11-15 12:00:00", "Limpeza"),
 ("sala 3", "2024-11-10 15:00:00", "Exame de rotina");
 
-select * from consulta;
+SELECT * FROM consulta;
 
-drop table consulta;
+DROP TABLE consulta;
 
 /* Apaga o banco de dados */
-drop database consultorio;
+DROP DATABASE consultorio;
