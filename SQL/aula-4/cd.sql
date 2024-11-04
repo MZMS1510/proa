@@ -92,7 +92,7 @@ CREATE TABLE titulo_pedido (
     fk_id_titulo INT NOT NULL,
     quantidade INT CHECK (quantidade > 0) NOT NULL,
     valor_total DECIMAL(10, 2) CHECK (valor_total > 0) NOT NULL,
-    PRIMARY KEY (fk_id_pedido, fk_id_titulo),
+    PRIMARY KEY (fk_id_pedido, fk_id_titulo)
 );
 
 CREATE TABLE titulo_artista (
