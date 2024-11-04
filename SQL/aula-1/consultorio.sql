@@ -1,4 +1,4 @@
--- Active: 1730467036999@@127.0.0.1@3306@consultorio
+-- Active: 1730728526398@@127.0.0.1@3306@consultorio
 /*
 ---------------------- Paciente --------------------
 */
@@ -129,18 +129,16 @@ VALUES (
         "5511972264266"
     );
 
-/* busca todo o conteúdo da tabela */
+-- busca todo o conteúdo da tabela
 SELECT * FROM paciente;
 
-/* Altera as colunas da tabela */
+-- Altera as colunas da tabela
 ALTER TABLE paciente ADD COLUMN convenio_paciente VARCHAR(25);
 
-ALTER TABLE paciente
-ADD COLUMN valor_convenio DECIMAL(10, 2)
-/* Atualiza os dados de algum item na tabela */
-UPDATE paciente
-SET
-    convenio_paciente = "Unimed";
+ALTER TABLE paciente ADD COLUMN valor_convenio DECIMAL(10, 2);
+
+-- Atualiza os dados de algum item na tabela
+UPDATE paciente SET convenio_paciente = "Unimed";
 
 UPDATE paciente SET valor_convenio = 100.00;
 
@@ -150,11 +148,9 @@ SET
 WHERE
     pk_id_paciente IN (2, 4, 6, 8, 10);
 
-DELETE FROM paciente
-WHERE
-    /*
-    ---------------------- Dentista --------------------
-    */
+DELETE FROM paciente WHERE;
+
+---------------------- Dentista --------------------
 
 CREATE TABLE dentista (
     pk_id_dentista INT AUTO_INCREMENT PRIMARY KEY UNIQUE,
@@ -163,7 +159,7 @@ CREATE TABLE dentista (
     cro_dentista VARCHAR(7),
     genero_dentista ENUM('m', 'f', 'o'),
     endereco_dentista VARCHAR(100),
-    telefone_dentista CHAR(13),
+    telefone_dentista CHAR(13)
 );
 
 INSERT INTO
@@ -349,6 +345,21 @@ ALTER TABLE consulta
 ADD FOREIGN KEY (fk_id_dentista) REFERENCES dentista (pk_id_dentista);
 
 SELECT * FROM consulta;
+
+SELECT c.data_consulta, c.descricao_consulta, p.nome_paciente
+FROM consulta AS c
+    JOIN paciente AS p on c.fk_id_paciente = p.pk_id_paciente;
+
+SELECT d.nome_dentista, c.data_consulta, c.local_consulta
+FROM consulta AS c
+    JOIN dentista AS d on c.fk_id_dentista = d.pk_id_dentista;
+
+-- Usando o JOIN para juntar as tabelas paciente, dentista e consulta
+SELECT p.nome_paciente, d.nome_dentista, c.data_consulta, c.local_consulta, c.descricao_consulta
+FROM
+    consulta AS c
+    JOIN paciente AS p on c.fk_id_paciente = p.pk_id_paciente
+    JOIN dentista AS d on c.fk_id_dentista = d.pk_id_dentista;
 
 DROP TABLE consulta;
 
