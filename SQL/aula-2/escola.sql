@@ -69,6 +69,46 @@ INSERT INTO aula(disciplina_aula, sala_aula, data_aula, hora_aula, capacidade_au
 ('Espanhol', 'A9', '2021-01-09', '16:00:00', 30),
 ('Artes', 'A10', '2021-01-10', '17:00:00', 30);
 
+START TRANSACTION;
+ALTER TABLE professor
+ADD estado_civil ENUM('solteiro', 'casado', 'divorciado', 'viúvo'),
+ADD nome_mae_professor VARCHAR(100);
+
+ALTER TABLE professor
+MODIFY cpf_professor CHAR(14);
+
+ALTER TABLE professor
+DROP COLUMN cidade_professor;
+
+UPDATE professor
+SET disciplina_professor = 'Filosofia'
+WHERE pk_re_professor IN (
+  SELECT pk_re_professor
+  FROM (SELECT pk_re_professor FROM professor ORDER BY pk_re_professor DESC LIMIT 5) AS subquery
+);
+
+DELETE FROM professor WHERE pk_re_professor IN (7, 10, 12);
+
+INSERT INTO professor(nome_professor, data_nascimento_professor, cpf_professor, genero_professor, disciplina_professor, estado_civil, nome_mae_professor) VALUES
+('Lucas', '1980-01-11', '123.456.789-10', 'm', 'Filosofia', 'solteiro', 'Maria'),
+('Beatriz', '1980-01-12', '123.456.789-11', 'f', 'Sociologia', 'casado', 'Ana'),
+('Rafael', '1980-01-13', '123.456.789-12', 'm', 'Educação Física', 'divorciado', 'Paula');
+
+ALTER TABLE professor
+ADD email VARCHAR(100);
+
+UPDATE professor
+SET email = 'solicitação em andamento';
+
+ALTER TABLE professor
+MODIFY estado_civil CHAR(10);
+
+ALTER TABLE professor
+ADD formacao_professor VARCHAR(50);
+
+COMMIT;
+ROLLBACK;
+
 SELECT * FROM aluno;
 SELECT * FROM professor;
 SELECT * FROM aula;
