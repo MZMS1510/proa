@@ -1,4 +1,4 @@
-package segundaaula;
+package terceiraaula;
 
 import java.util.Scanner;
 
